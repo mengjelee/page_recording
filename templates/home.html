@@ -25,25 +25,29 @@
         <button type="submit">C</button>
     </form>
     <form action="/D/" method="POST">
-        <button type="button">D</button>
+        <button type="submit">D</button>
     </form>
     <form action="/E/" method="POST">
-        <button type="button">E</button>
+        <button type="submit">E</button>
     </form>
     <form action="/F/" method="POST">
-        <button type="button">F</button>
+        <button type="submit">F</button>
     </form>
     <form action="/G/" method="POST">
-        <button type="button">G</button>
+        <button type="submit">G</button>
     </form>
     <form action="/H/" method="POST">
-        <button type="button">H</button>
+        <button type="submit">H</button>
     </form>
     <form action="/I/" method="POST">
         <button type="button">I</button>
     </form>
     <form action="/J/" method="POST">
-        <button type="button">J</button>
+        <button type="submit">J</button>
+    </form>
+    <form action="/result/" name="re" method="POST">
+        {% csrf_token %}
+        <button type="submit">result</button>
     </form>
     <form action="/logout/" method="POST">
         {% csrf_token %}
