@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    {% if user.is_authenticated %}
+    <a> Hi {{ user.username }}! </a>
+    <a> path: {{ path_present }}! </a>
+    <form action="/" method="POST">
+        {% csrf_token %}
+        <button type="submit">HOME</button>
+    </form>
+    <form action="/B/" method="POST">
+        {% csrf_token %}
+        <button type="submit">B</button>
+    </form>
+    <form action="/C/" method="POST">
+        {% csrf_token %}
+        <button type="submit">C</button>
+    </form>
+    <form action="/D/" method="POST">
+        <button type="button">D</button>
+    </form>
+    <form action="/E/" method="POST">
+        <button type="button">E</button>
+    </form>
+    <form action="/F/" method="POST">
+        <button type="button">F</button>
+    </form>
+    <form action="/G/" method="POST">
+        <button type="button">G</button>
+    </form>
+    <form action="/H/" method="POST">
+        <button type="button">H</button>
+    </form>
+    <form action="/I/" method="POST">
+        <button type="button">I</button>
+    </form>
+    <form action="/J/" method="POST">
+        <button type="button">J</button>
+    </form>
+    <form action="/logout/" method="POST">
+        {% csrf_token %}
+        <button type="submit">logout</button>
+    </form>
+    {% endif %}
+</body>
+
+</html>
