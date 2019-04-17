@@ -24,6 +24,10 @@
         {% csrf_token %}
         <button type="submit">B</button>
     </form>
+    <form action="/C/" method="POST">
+        {% csrf_token %}
+        <button type="submit">C</button>
+    </form>
     <form action="/D/" method="POST">
         {% csrf_token %}
         <button type="submit">D</button>
@@ -47,10 +51,6 @@
     <form action="/I/" method="POST">
         {% csrf_token %}
         <button type="submit">I</button>
-    </form>
-    <form action="/J/" method="POST">
-        {% csrf_token %}
-        <button type="submit">J</button>
     </form>
     <form action="/result/" name="re" method="POST">
         {% csrf_token %}

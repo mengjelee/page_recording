@@ -120,5 +120,103 @@ def C_page(request):
     USER_PATH.objects.filter(userName=user.username).update(userPath = p_c)
     print("go to C")
     return render(request, 'C.html',locals())
+def D_page(request):
+    user = request.user
+    #user_info = USER_PATH.objects.filter(userName=user.username)
+    D_path = " D"
+    path_present = USER_PATH.objects.filter(userName=user.username).get()
+    p_D_1 = path_present.userPath
+    str(p_D_1)
+    p_D = p_D_1 + D_path
+    print(p_D)
+    USER_PATH.objects.filter(userName=user.username).update(userPath = p_D)
+    print("go to D")
+    return render(request, 'D.html',locals())
+def E_page(request):
+    user = request.user
+    #user_info = USER_PATH.objects.filter(userName=user.username)
+    E_path = " E"
+    path_present = USER_PATH.objects.filter(userName=user.username).get()
+    p_E_1 = path_present.userPath
+    str(p_E_1)
+    p_E = p_E_1 + E_path
+    print(p_E)
+    USER_PATH.objects.filter(userName=user.username).update(userPath = p_E)
+    print("go to E")
+    return render(request, 'E.html',locals())
+def F_page(request):
+    user = request.user
+    #user_info = USER_PATH.objects.filter(userName=user.username)
+    F_path = " F"
+    path_present = USER_PATH.objects.filter(userName=user.username).get()
+    p_F_1 = path_present.userPath
+    str(p_F_1)
+    p_F = p_F_1 + F_path
+    print(p_F)
+    USER_PATH.objects.filter(userName=user.username).update(userPath = p_F)
+    print("go to F")
+    return render(request, 'F.html',locals())
+def G_page(request):
+    user = request.user
+    #user_info = USER_PATH.objects.filter(userName=user.username)
+    G_path = " G"
+    path_present = USER_PATH.objects.filter(userName=user.username).get()
+    p_G_1 = path_present.userPath
+    str(p_G_1)
+    p_G = p_G_1 + G_path
+    print(p_G)
+    USER_PATH.objects.filter(userName=user.username).update(userPath = p_G)
+    print("go to G")
+    return render(request, 'G.html',locals())
+def H_page(request):
+    user = request.user
+    #user_info = USER_PATH.objects.filter(userName=user.username)
+    H_path = " H"
+    path_present = USER_PATH.objects.filter(userName=user.username).get()
+    p_H_1 = path_present.userPath
+    str(p_H_1)
+    p_H = p_H_1 + H_path
+    print(p_H)
+    USER_PATH.objects.filter(userName=user.username).update(userPath = p_H)
+    print("go to H")
+    return render(request, 'H.html',locals())
+def I_page(request):
+    user = request.user
+    #user_info = USER_PATH.objects.filter(userName=user.username)
+    I_path = " I"
+    path_present = USER_PATH.objects.filter(userName=user.username).get()
+    p_I_1 = path_present.userPath
+    str(p_I_1)
+    p_I = p_I_1 + I_path
+    print(p_I)
+    USER_PATH.objects.filter(userName=user.username).update(userPath = p_I)
+    print("go to I")
+    return render(request, 'I.html',locals())
+def J_page(request):
+    user = request.user
+    #user_info = USER_PATH.objects.filter(userName=user.username)
+    J_path = " J"
+    path_present = USER_PATH.objects.filter(userName=user.username).get()
+    p_J_1 = path_present.userPath
+    str(p_J_1)
+    p_J = p_J_1 + J_path
+    print(p_J)
+    USER_PATH.objects.filter(userName=user.username).update(userPath = p_J)
+    print("go to J")
+    return render(request, 'J.html',locals())
+def result_page(request):
+    user = request.user
+    #user_info = USER_PATH.objects.filter(userName=user.username)
+    result_path = " result"
+    path_present = USER_PATH.objects.filter(userName=user.username).get()
+    p_result_1 = path_present.userPath
+    str(p_result_1)
+    p_result = p_result_1 + result_path
+    print(p_result)
+    USER_PATH.objects.filter(userName=user.username).update(userPath = p_result)
+    print("go to result")
+    Everyones_data = USER_PATH.objects.all()
+    return render(request, 'result.html',locals())
+    
 
 

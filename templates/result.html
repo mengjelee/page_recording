@@ -24,6 +24,10 @@
         {% csrf_token %}
         <button type="submit">B</button>
     </form>
+    <form action="/C/" method="POST">
+        {% csrf_token %}
+        <button type="submit">C</button>
+    </form>
     <form action="/D/" method="POST">
         {% csrf_token %}
         <button type="submit">D</button>
@@ -52,15 +56,12 @@
         {% csrf_token %}
         <button type="submit">J</button>
     </form>
-    <form action="/result/" name="re" method="POST">
-        {% csrf_token %}
-        <button type="submit">result</button>
-    </form>
     <form action="/logout/" method="POST">
         {% csrf_token %}
         <button type="submit">logout</button>
     </form>
-    {% endif %}
+    {% endif %} {%for e in Everyones_data %}
+    <br> {{e}} </br>{% endfor %}
 </body>
 
 </html>

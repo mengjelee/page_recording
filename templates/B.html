@@ -25,25 +25,36 @@
         <button type="submit">C</button>
     </form>
     <form action="/D/" method="POST">
-        <button type="button">D</button>
+        {% csrf_token %}
+        <button type="submit">D</button>
     </form>
     <form action="/E/" method="POST">
-        <button type="button">E</button>
+        {% csrf_token %}
+        <button type="submit">E</button>
     </form>
     <form action="/F/" method="POST">
-        <button type="button">F</button>
+        {% csrf_token %}
+        <button type="submit">F</button>
     </form>
     <form action="/G/" method="POST">
-        <button type="button">G</button>
+        {% csrf_token %}
+        <button type="submit">G</button>
     </form>
     <form action="/H/" method="POST">
-        <button type="button">H</button>
+        {% csrf_token %}
+        <button type="submit">H</button>
     </form>
     <form action="/I/" method="POST">
-        <button type="button">I</button>
+        {% csrf_token %}
+        <button type="submit">I</button>
     </form>
     <form action="/J/" method="POST">
-        <button type="button">J</button>
+        {% csrf_token %}
+        <button type="submit">J</button>
+    </form>
+    <form action="/result/" name="re" method="POST">
+        {% csrf_token %}
+        <button type="submit">result</button>
     </form>
     <form action="/logout/" method="POST">
         {% csrf_token %}
